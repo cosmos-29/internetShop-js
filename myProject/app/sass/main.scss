@@ -1,0 +1,27 @@
+   @import '_libs';
+    
+    // Стили к страничке index.html;
+    @mixin margin {
+        margin: 0 auto;
+        width: $widthAll;
+        
+    }
+    
+    body {
+        header {
+            background-color: $colorAll !important;
+            height: auto;
+        .container {
+            font-family: $fontFamily;
+            border-bottom: 1px solid #ececec;
+            
+            width: $widthAll;
+            nav {
+                @include margin;
+                background-color: $colorAll !important;
+                margin-right: 0;
+                }
+            
+        }
+    }
+}
