@@ -8805,14 +8805,14 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media (max-width: 992px) {
   .headerInside .container .logo {
-    height: 100% !important; }
+    height: 100%; }
   .account {
     height: auto; }
     .account .active {
-      margin-top: 30px !important; }
+      margin-top: 30px; }
   .mainContainer .nawWrap {
-    height: -webkit-calc(387px/2.4) !important;
-    height: calc(387px/2.4) !important;
+    height: -webkit-calc(387px/2.4);
+    height: calc(387px/2.4);
     width: 100%; }
     .mainContainer .nawWrap nav {
       display: -webkit-box;
@@ -8822,14 +8822,14 @@ a.text-dark:hover, a.text-dark:focus {
       -webkit-flex-wrap: wrap;
           -ms-flex-wrap: wrap;
               flex-wrap: wrap;
-      -webkit-box-orient: horizontal !important;
-      -webkit-box-direction: normal !important;
-      -webkit-flex-direction: row !important;
-          -ms-flex-direction: row !important;
-              flex-direction: row !important;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
       height: inherit;
       width: 100%;
-      margin: 0 !important;
+      margin: 0;
       padding-right: 0px;
       -webkit-align-content: space-around;
           -ms-flex-line-pack: distribute;
@@ -8838,8 +8838,8 @@ a.text-dark:hover, a.text-dark:focus {
           -ms-flex-pack: distribute;
               justify-content: space-around; }
       .mainContainer .nawWrap nav a {
-        margin-top: 0 !important;
-        padding-top: 0 !important;
+        margin-top: 0;
+        padding-top: 0;
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -8848,35 +8848,83 @@ a.text-dark:hover, a.text-dark:focus {
         -webkit-justify-content: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        font-size: 32px !important;
-        width: 25%;
-        margin-top: 30px; }
-        .mainContainer .nawWrap nav a:first-child {
-          margin-top: 0px !important; }
-        .mainContainer .nawWrap nav a:last-child {
-          margin-bottom: 0px; }
+        font-size: 32px;
+        width: 25%; }
   .mainContainer .slider {
-    width: auto; } }
+    width: auto; }
+  .featuredItems {
+    width: 50%;
+    min-height: auto;
+    padding-left: 25%;
+    padding-right: 25%; }
+    .featuredItems .fItems {
+      width: 100%;
+      height: auto; }
+      .featuredItems .fItems > p {
+        display: none; }
+      .featuredItems .fItems .sign h2 {
+        font-size: 28px; }
+      .featuredItems .fItems .sign p {
+        font-size: 32px; }
+      .featuredItems .fItems .forAdaptive {
+        height: 600px; }
+        .featuredItems .fItems .forAdaptive .background {
+          height: inherit; }
+          .featuredItems .fItems .forAdaptive .background button {
+            width: 50%;
+            height: 15%;
+            font-size: 26px; }
+  .contantAim .contantAimInside {
+    height: auto;
+    padding-left: 10%;
+    padding-right: 10%; }
+    .contantAim .contantAimInside .content2,
+    .contantAim .contantAimInside .content3,
+    .contantAim .contantAimInside .content4 {
+      margin-top: 20px; }
+    .contantAim .contantAimInside .content1,
+    .contantAim .contantAimInside .content2,
+    .contantAim .contantAimInside .content3,
+    .contantAim .contantAimInside .content4 {
+      width: 100%; } }
 
 @media (min-width: 992px) and (max-width: 1140px) {
   .featuredItems {
-    width: 50% !important;
+    width: 50%;
     min-height: 2000px; } }
 
 @media (min-width: 768px) and (max-width: 992px) {
   .featuredItems {
-    width: 100% !important;
+    width: 100%;
     min-height: auto; }
   .contantAim .contantAimInside {
-    height: auto !important; }
+    height: auto; }
     .contantAim .contantAimInside .content2,
     .contantAim .contantAimInside .content3,
     .contantAim .contantAimInside .content4 {
-      margin-top: 20px; } }
+      margin-top: 20px; }
+  .offerItem {
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0px 453px 151px;
+    grid-template-areas: "a a a" "b b b" "c d e"; }
+    .offerItem .offerItemPic {
+      grid-area: b;
+      -webkit-background-size: 100% 100% !important;
+              background-size: 100% !important; }
+    .offerItem h3 {
+      padding-top: 20px; }
+  .review .reviewChild .reviewChildInside {
+    grid-template-rows: 1fr 1px 1fr; }
+  footer nav {
+    display: grid;
+    grid-template-areas: "o o o o" "a b c d" "e f g k" "l l l l";
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 123px 60px 3fr 79px; } }
 
 @media (max-width: 768px) {
   .offerItem {
-    grid-template-columns: 1fr 1fr 1fr !important;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0px 453px 151px 151px 151px;
     height: auto;
     grid-template-areas: "a a a" "b b b" "c c c" "d d d" "e e e"; }
@@ -8885,10 +8933,10 @@ a.text-dark:hover, a.text-dark:focus {
       -webkit-background-size: 100% 100% !important;
               background-size: 100% !important; }
     .offerItem h3 {
-      padding-top: 20px !important;
-      font-size: 40px !important; }
+      padding-top: 20px;
+      font-size: 40px; }
     .offerItem p {
-      font-size: 28px !important;
+      font-size: 28px;
       line-height: 40px !important; }
     .offerItem .offerDiscrText {
       width: 600px !important; }
@@ -9031,68 +9079,51 @@ a.text-dark:hover, a.text-dark:focus {
         footer nav .footerSocial .right a {
           font-size: 52px !important; } }
 
-@media (min-width: 0px) and (max-width: 992px) {
+@media (min-width: 992px) {
+  header .headerInside .container:first-child .bg-light .navbar-brand .logo {
+    height: 50px; }
+  .mainContainer .nawWrap {
+    height: 51px; }
+    .mainContainer .nawWrap nav a {
+      font-size: 14px; }
+  .mainContainer .featuredItems {
+    width: 100%; }
+    .mainContainer .featuredItems .fItems {
+      width: 261px;
+      height: 364px; }
+      .mainContainer .featuredItems .fItems .sign h2 {
+        font-size: 14px; }
+      .mainContainer .featuredItems .fItems .sign p {
+        font-size: 16px; }
+      .mainContainer .featuredItems .fItems .forAdaptive {
+        width: inherit;
+        height: 279px; }
+        .mainContainer .featuredItems .fItems .forAdaptive .background {
+          width: inherit;
+          height: 285px; }
+          .mainContainer .featuredItems .fItems .forAdaptive .background button {
+            width: 150px;
+            height: 39px;
+            font-size: 13px; }
   .contantAim .contantAimInside {
-    height: auto !important;
-    padding-left: 10% !important;
-    padding-right: 10% !important; }
-    .contantAim .contantAimInside .content2,
-    .contantAim .contantAimInside .content3,
-    .contantAim .contantAimInside .content4 {
-      margin-top: 20px; }
+    height: 950px;
+    padding: 100px 0 0 0; }
     .contantAim .contantAimInside .content1,
     .contantAim .contantAimInside .content2,
     .contantAim .contantAimInside .content3,
     .contantAim .contantAimInside .content4 {
-      width: 100% !important; } }
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .offerItem {
-    width: 100% !important;
-    grid-template-columns: 1fr 1fr 1fr !important;
-    grid-template-rows: 0px 453px 151px;
-    grid-template-areas: "a a a" "b b b" "c d e"; }
-    .offerItem .offerItemPic {
-      grid-area: b;
-      -webkit-background-size: 100% 100% !important;
-              background-size: 100% !important; }
-    .offerItem h3 {
-      padding-top: 20px !important; }
-  .review .reviewChild .reviewChildInside {
-    grid-template-rows: 1fr 1px 1fr; }
-  footer nav {
-    display: grid;
-    grid-template-areas: "o o o o" "a b c d" "e f g k" "l l l l";
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    grid-template-rows: 123px 60px 3fr 79px; } }
-
-@media (max-width: 992px) {
-  .featuredItems {
-    width: 100% !important !important;
-    min-height: auto;
-    padding-left: 25% !important;
-    padding-right: 25% !important; }
-    .featuredItems .fItems {
-      width: 100% !important;
-      height: auto !important; }
-      .featuredItems .fItems .sign h2 {
-        font-size: 28px !important; }
-      .featuredItems .fItems .sign p {
-        font-size: 32px !important; }
-      .featuredItems .fItems .forAdaptive {
-        height: 600px !important; }
-        .featuredItems .fItems .forAdaptive .background {
-          height: inherit !important; }
-          .featuredItems .fItems .forAdaptive .background button {
-            width: 50% !important;
-            height: 15% !important;
-            font-size: 26px !important; } }
-
-@media (min-width: 992px) {
+      width: -webkit-calc(50% - 20px);
+      width: calc(50% - 20px); }
   .offerItem {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 113px 529px/3 529px/3 529px/3 97px;
     grid-template-areas: "a a" "b c" "b d" "b e" "f f"; }
+    .offerItem .offerItemPic h3 {
+      padding-top: 50px;
+      font-size: 20px; }
+    .offerItem .offerItemPic p {
+      font-size: 14px;
+      line-height: 24px; }
   .review .reviewChild .reviewChildInside {
     grid-template-columns: 1fr 1px 1fr; }
   footer nav {
@@ -9226,8 +9257,7 @@ body {
       display: -ms-flexbox;
       display: flex;
       margin: 0 auto;
-      width: 1140px;
-      height: 51px; }
+      width: 1140px; }
       body .mainContainer .nawWrap nav {
         margin: auto;
         -webkit-box-align: center;
@@ -9238,7 +9268,6 @@ body {
           padding: 0 15px;
           color: #222222;
           font-family: "Lato";
-          font-size: 14px;
           font-weight: 700;
           text-decoration: none;
           text-transform: uppercase; }
@@ -9321,9 +9350,7 @@ body {
         -webkit-justify-content: space-around;
             -ms-flex-pack: distribute;
                 justify-content: space-around;
-        padding: 100px 0 0 0;
-        width: 1140px;
-        height: 1040px; }
+        width: 1140px; }
         body .mainContainer .contantAim .contantAimInside .content1,
         body .mainContainer .contantAim .contantAimInside .content2,
         body .mainContainer .contantAim .contantAimInside .content3,
@@ -9371,31 +9398,23 @@ body {
             margin: 0; }
         body .mainContainer .contantAim .contantAimInside .content1 {
           height: 542px;
-          width: -webkit-calc(50% - 20px);
-          width: calc(50% - 20px);
           background: url("../../images/Layer_30.jpg") no-repeat;
           -webkit-background-size: 108% 108%;
                   background-size: 108%; }
         body .mainContainer .contantAim .contantAimInside .content2 {
           height: 261px;
-          width: -webkit-calc(50% - 20px);
-          width: calc(50% - 20px);
           background: url("../../images/Layer_37.jpg") no-repeat, #dadad2;
           background-position: right top;
           -webkit-background-size: 70% 70%;
                   background-size: 70%; }
         body .mainContainer .contantAim .contantAimInside .content3 {
           height: 261px;
-          width: -webkit-calc(50% - 20px);
-          width: calc(50% - 20px);
           background: url("../../images/Layer_32.jpg") no-repeat;
           background-position: right top;
           -webkit-background-size: 109% 109%;
                   background-size: 109%; }
         body .mainContainer .contantAim .contantAimInside .content4 {
           height: 542px;
-          width: -webkit-calc(50% - 20px);
-          width: calc(50% - 20px);
           background: url("../../images/Layer_31.jpg") no-repeat;
           background-position: right top;
           -webkit-background-size: 108% 108%;
@@ -9415,9 +9434,7 @@ body {
               flex-wrap: wrap;
       -webkit-justify-content: space-around;
           -ms-flex-pack: distribute;
-              justify-content: space-around;
-      /* three columns */
-      /* three rows  */ }
+              justify-content: space-around; }
       body .mainContainer .featuredItems .naming {
         width: 100% !important;
         min-height: 120px;
@@ -9426,8 +9443,6 @@ body {
         width: 100% !important;
         height: 203px !important; }
       body .mainContainer .featuredItems .fItems {
-        width: 261px;
-        height: 364px;
         padding: 0;
         position: relative;
         margin-bottom: 37px; }
@@ -9435,48 +9450,33 @@ body {
           background: url(../../images/Background.png) no-repeat;
           -webkit-background-size: 100% 100%;
                   background-size: 100%;
-          width: inherit;
-          height: 285px;
           display: none; }
           body .mainContainer .featuredItems .fItems .background button {
             background: none;
-            width: 150px;
-            height: 39px;
             border: 1px solid #ffffff;
             font-family: "Lato";
-            font-size: 13px;
             font-weight: 700;
             color: #ffffff; }
         body .mainContainer .featuredItems .fItems .fItem1 {
           background: url(../../images/Layer_2.jpg) no-repeat, #ffffff;
           -webkit-background-size: 100% 100%;
-                  background-size: 100%;
-          width: inherit;
-          height: 279px; }
+                  background-size: 100%; }
         body .mainContainer .featuredItems .fItems .fItem2 {
           background: url(../../images/Layer_3.jpg) no-repeat, #ffffff;
           -webkit-background-size: 100% 100%;
-                  background-size: 100%;
-          width: inherit;
-          height: 279px; }
+                  background-size: 100%; }
         body .mainContainer .featuredItems .fItems .fItem3 {
           background: url(../../images/Layer_4.jpg) no-repeat, #ffffff;
           -webkit-background-size: 102% 102%;
-                  background-size: 102%;
-          width: inherit;
-          height: 279px; }
+                  background-size: 102%; }
         body .mainContainer .featuredItems .fItems .fItem4 {
           background: url(../../images/Layer_5.jpg) no-repeat, #ffffff;
           -webkit-background-size: 100% 100%;
-                  background-size: 100%;
-          width: inherit;
-          height: 279px; }
+                  background-size: 100%; }
         body .mainContainer .featuredItems .fItems .fItem5 {
           background: url(../../images/Layer_6.jpg) no-repeat, #ffffff;
           -webkit-background-size: 100% 100%;
-                  background-size: 100%;
-          width: inherit;
-          height: 279px; }
+                  background-size: 100%; }
         body .mainContainer .featuredItems .fItems .fItem6 {
           background: url(../../images/Layer_7.jpg) no-repeat, #ffffff;
           -webkit-background-size: 100% 100%;
@@ -9486,27 +9486,21 @@ body {
         body .mainContainer .featuredItems .fItems .fItem7 {
           background: url(../../images/Layer_8.jpg) no-repeat, #ffffff;
           -webkit-background-size: 105% 105%;
-                  background-size: 105%;
-          width: inherit;
-          height: 279px; }
+                  background-size: 105%; }
         body .mainContainer .featuredItems .fItems .fItem8 {
           background: url(../../images/Layer_9.jpg) no-repeat, #ffffff;
           -webkit-background-size: 100% 100%;
-                  background-size: 100%;
-          width: inherit;
-          height: 279px; }
+                  background-size: 100%; }
         body .mainContainer .featuredItems .fItems .sign {
           padding: 18px 14px; }
           body .mainContainer .featuredItems .fItems .sign h2 {
             margin: 0;
             color: #222222;
             font-family: "Lato";
-            font-size: 14px;
             font-weight: 400;
             text-transform: uppercase; }
           body .mainContainer .featuredItems .fItems .sign p {
             font-family: "Lato";
-            font-size: 16px;
             font-weight: 700;
             text-transform: uppercase;
             color: #f16d7f; }
@@ -9638,16 +9632,12 @@ body {
             margin: 0;
             color: #fbfbfb;
             font-family: "Lato";
-            font-size: 20px;
-            font-weight: 700;
-            padding-top: 50px; }
+            font-weight: 700; }
           body .mainContainer .offerItem .offerItemDescription .offerDiscrText p {
             margin: 0;
             color: #fbfbfb;
             font-family: "Lato";
-            font-size: 14px;
             font-weight: 300;
-            line-height: 24px;
             padding-top: 5px; }
     body .mainContainer .review {
       background-color: #eeeeee;

@@ -4,46 +4,37 @@
         .headerInside {
             .container {
                 .logo {
-                    height: 100% !important;
+                    height: 100%;
                 }
             }
         }
         .account {
             height: auto;
             .active {
-                margin-top: 30px !important;
+                margin-top: 30px;
             }
         }
         .mainContainer {
             .nawWrap {
-                height: calc(387px/2.4) !important;
+                height: calc(387px/2.4);
                 width: 100%;
                 nav {
                     display: flex;
                     flex-wrap: wrap;
-                    flex-direction: row !important;
+                    flex-direction: row;
                     height: inherit;
                     width: 100%;
-                    //flex-grow: 1;
-                    margin: 0 !important;
-                    //margin-left: auto !important;
+                    margin: 0;
                     padding-right: 0px;
                     align-content: space-around;
                     justify-content: space-around;
                     a {
-                        margin-top: 0 !important;
-                        padding-top: 0 !important;
+                        margin-top: 0;
+                        padding-top: 0;
                         display: flex;
                         justify-content: center;
-                        font-size: 32px !important;
+                        font-size: 32px;
                         width: 25%;
-                        margin-top: 30px;
-                        &:first-child {
-                            margin-top: 0px !important;
-                        }
-                        &:last-child {
-                            margin-bottom: 0px;
-                        }
                     }
                 }
             }
@@ -51,24 +42,75 @@
                 width: auto;
             }
         }
+        .featuredItems {
+            width: 50%;
+            min-height: auto;
+            padding-left: 25%;
+            padding-right: 25%;
+            .fItems {
+                width: 100%;
+                height: auto;
+                & > p {
+                    display: none;
+                }
+                .sign {
+                    h2 {
+                        font-size: 28px;
+                    }
+                    p {
+                        font-size: 32px;
+                    }
+                }
+                .forAdaptive {
+                    height: 600px;
+                    .background {
+                        height: inherit;
+                        button {
+                            width: 50%;
+                            height: 15%;
+                            font-size: 26px;
+                        }
+                    }
+                }
+            }
+        }
+        .contantAim {
+            .contantAimInside {
+                height: auto;
+                padding-left: 10%;
+                padding-right: 10%;
+                .content2,
+                .content3,
+                .content4 {
+                    margin-top: 20px;
+                }
+                .content1,
+                .content2,
+                .content3,
+                .content4 {
+                    width: 100%;
+                }
+            }
+        }
     }
     
+    // Большие девайсы («таблетки», >= 992px)
     @media (min-width: 992px) and (max-width:$widthAll) {
         .featuredItems {
-            width: 50% !important;
+            width: 50%;
             min-height: 2000px;
         }
     }
     
-    // Средние девайсы («таблетки», >= 768px)
+    // Средние девайсы («таблетки», >= 768px < 992px)
     @media (min-width: 768px) and (max-width:992px) {
         .featuredItems {
-            width: 100% !important;
+            width: 100%;
             min-height: auto;
         }
         .contantAim {
             .contantAimInside {
-                height: auto !important;
+                height: auto;
                 .content2,
                 .content3,
                 .content4 {
@@ -76,11 +118,40 @@
                 }
             }
         }
+        .offerItem {
+            width: 100%;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 0px 453px 151px;
+            grid-template-areas: "a a a" "b b b" "c d e";
+            .offerItemPic {
+                grid-area: b;
+                background-size: 100% !important;
+            }
+            h3 {
+                padding-top: 20px;
+            }
+        }
+        .review {
+            .reviewChild {
+                .reviewChildInside {
+                    grid-template-rows: 1fr 1px 1fr;
+                }
+            }
+        }
+        footer {
+            nav {
+                display: grid;
+                grid-template-areas: "o o o o" "a b c d" "e f g k" "l l l l";
+                grid-template-columns: 2fr 1fr 1fr 1fr;
+                grid-template-rows: 123px 60px 3fr 79px;
+            }
+        }
     }
     
+    // Для малых и очень малых девайсов ( <= 768px)
     @media (max-width: 768px) {
         .offerItem {
-            grid-template-columns: 1fr 1fr 1fr !important;
+            grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 0px 453px 151px 151px 151px;
             height: auto;
             grid-template-areas: "a a a" "b b b" "c c c" "d d d" "e e e";
@@ -89,11 +160,11 @@
                 background-size: 100% !important;
             }
             h3 {
-                padding-top: 20px !important;
-                font-size: 40px !important;
+                padding-top: 20px;
+                font-size: 40px;
             }
             p {
-                font-size: 28px !important;
+                font-size: 28px;
                 line-height: 40px !important;
             }
             .offerDiscrText {
@@ -233,100 +304,94 @@
                 }
             }
         }
-        //grid-template-areas: "o o o o" "a b c d" "e f g k" "l l l l";
     }
     
-    @media (min-width: 0px) and (max-width:992px) {
-        .contantAim {
-            .contantAimInside {
-                height: auto !important;
-                padding-left: 10% !important;
-                padding-right: 10% !important;
-                .content2,
-                .content3,
-                .content4 {
-                    margin-top: 20px;
-                }
-                .content1,
-                .content2,
-                .content3,
-                .content4 {
-                    width: 100% !important;
-                }
-            }
-        }
-    }
-    
-    // Малые девайсы («ландшафтные телефоны», >= 576px);
-    @media (min-width: 768px) and (max-width: 992px) {
-        .offerItem {
-            width: 100% !important;
-            grid-template-columns: 1fr 1fr 1fr !important;
-            grid-template-rows: 0px 453px 151px;
-            grid-template-areas: "a a a" "b b b" "c d e";
-            .offerItemPic {
-                grid-area: b;
-                background-size: 100% !important;
-            }
-            h3 {
-                padding-top: 20px !important;
-            }
-        }
-        .review {
-            .reviewChild {
-                .reviewChildInside {
-                    grid-template-rows: 1fr 1px 1fr;
-                }
-            }
-        }
-        footer {
-            nav {
-                display: grid;
-                grid-template-areas: "o o o o" "a b c d" "e f g k" "l l l l";
-                grid-template-columns: 2fr 1fr 1fr 1fr;
-                grid-template-rows: 123px 60px 3fr 79px;
-            }
-        }
-    }
-    
-    @media (max-width: 992px) {
-        .featuredItems {
-            width: 100% !important !important;
-            min-height: auto;
-            padding-left: 25% !important;
-            padding-right: 25% !important;
-            .fItems {
-                width: 100% !important;
-                //height: calc(364px*2)!important;
-                height: auto !important;
-                .sign {
-                    h2 {
-                        font-size: 28px !important;
-                    }
-                    p {
-                        font-size: 32px !important;
-                    }
-                }
-                .forAdaptive {
-                    height: 600px !important;
-                    .background {
-                        height: inherit !important;
-                        button {
-                            width: 50% !important;
-                            height: 15% !important;
-                            font-size: 26px !important;
+    // Для крупных девайсов ( >= 992px)
+    @media (min-width: 992px) {
+        header {
+            .headerInside {
+                .container:first-child {
+                    .bg-light {
+                        .navbar-brand {
+                            .logo {
+                                height: 50px;
+                            }
                         }
                     }
                 }
             }
         }
-    }
-    
-    @media (min-width: 992px) {
+        .mainContainer {
+            .nawWrap {
+                height: 51px;
+                nav {
+                    a {
+                        font-size: 14px;
+                    }
+                }
+            }
+            .featuredItems {
+                width: 100%;
+                .fItems {
+                    width: 261px;
+                    height: 364px;
+                    .sign {
+                        h2 {
+                            font-size: 14px;
+                        }
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+                    .forAdaptive {
+                        width: inherit;
+                        height: 279px;
+                        ;
+                        .background {
+                            width: inherit;
+                            height: 285px;
+                            ;
+                            button {
+                                width: 150px;
+                                height: 39px;
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contantAim {
+            .contantAimInside {
+                height: 950px;
+                padding: 100px 0 0 0;
+                .content2,
+                .content3,
+                .content4 {
+                    //margin-top: 20px;
+                }
+                .content1,
+                .content2,
+                .content3,
+                .content4 {
+                    width: $widthContents;
+                }
+            }
+        }
         .offerItem {
             grid-template-columns: 2fr 1fr;
             grid-template-rows: 113px 529px/3 529px/3 529px/3 97px;
             grid-template-areas: "a a" "b c" "b d" "b e" "f f";
+            .offerItemPic {
+                h3 {
+                    padding-top: 50px;
+                    font-size: 20px;
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
         }
         .review {
             .reviewChild {
@@ -346,7 +411,6 @@
     }
     
     // Стили к страничке index.html;
-    // Экстрабольшие девайсы (большие десктопы, >= 1200px)
     body {
         margin: 0;
         display: grid;
@@ -453,7 +517,6 @@
             .nawWrap {
                 display: flex;
                 @include margin;
-                height: 51px;
                 nav {
                     margin: auto;
                     align-items: center;
@@ -461,7 +524,6 @@
                         padding: 0 15px;
                         color: #222222;
                         font-family: $fontFamily;
-                        font-size: 14px;
                         font-weight: 700;
                         text-decoration: none;
                         text-transform: uppercase;
@@ -523,9 +585,7 @@
                     margin: auto;
                     align-items: center;
                     justify-content: space-around;
-                    padding: 100px 0 0 0;
                     width: $widthAll;
-                    height: 1040px;
                     .content1,
                     .content2,
                     .content3,
@@ -564,27 +624,23 @@
                     }
                     .content1 {
                         height: 542px;
-                        width: $widthContents;
                         background: url("../../images/Layer_30.jpg") no-repeat;
                         background-size: 108%;
                     }
                     .content2 {
                         height: 261px;
-                        width: $widthContents;
                         background: url("../../images/Layer_37.jpg") no-repeat, #dadad2;
                         background-position: right top;
                         background-size: 70%;
                     }
                     .content3 {
                         height: 261px;
-                        width: $widthContents;
                         background: url("../../images/Layer_32.jpg") no-repeat, ;
                         background-position: right top;
                         background-size: 109%;
                     }
                     .content4 {
                         height: 542px;
-                        width: $widthContents;
                         background: url("../../images/Layer_31.jpg") no-repeat, ;
                         background-position: right top;
                         background-size: 108%;
@@ -593,20 +649,12 @@
             }
             .featuredItems {
                 @include margin;
-                //padding: 0 232px 0 232px;
                 min-height: 990px;
                 width: $widthAll;
                 height: auto;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-around;
-                //grid-template-areas: "a a a a" "b c d e" "f g k l" "m m m m";
-                // grid-row-gap: 30px;
-                //grid-column-gap: 39px;
-                //grid-template-columns: 1fr 1fr 1fr 1fr;
-                /* three columns */
-                //grid-template-rows: 111px 364px 364px 74px;
-                /* three rows  */
                 .naming {
                     width: 100%!important;
                     min-height: 120px;
@@ -617,9 +665,6 @@
                     height: 203px!important;
                 }
                 .fItems {
-                    //padding: 1em;
-                    width: 261px;
-                    height: 364px;
                     padding: 0;
                     position: relative;
                     margin-bottom: 37px;
@@ -627,16 +672,11 @@
                     .background {
                         background: url(../../images/Background.png) no-repeat;
                         background-size: 100%;
-                        width: inherit;
-                        height: 285px;
                         display: none;
                         button {
                             background: none;
-                            width: 150px;
-                            height: 39px;
                             border: 1px solid #ffffff;
                             font-family: $fontFamily;
-                            font-size: 13px;
                             font-weight: 700;
                             color: $colorAll;
                         }
@@ -644,32 +684,22 @@
                     .fItem1 {
                         background: url(../../images/Layer_2.jpg) no-repeat, $colorAll;
                         background-size: 100%;
-                        width: inherit;
-                        height: 279px;
                     }
                     .fItem2 {
                         background: url(../../images/Layer_3.jpg) no-repeat, $colorAll;
                         background-size: 100%;
-                        width: inherit;
-                        height: 279px;
                     }
                     .fItem3 {
                         background: url(../../images/Layer_4.jpg) no-repeat, $colorAll;
                         background-size: 102%;
-                        width: inherit;
-                        height: 279px;
                     }
                     .fItem4 {
                         background: url(../../images/Layer_5.jpg) no-repeat, $colorAll;
                         background-size: 100%;
-                        width: inherit;
-                        height: 279px;
                     }
                     .fItem5 {
                         background: url(../../images/Layer_6.jpg) no-repeat, $colorAll;
                         background-size: 100%;
-                        width: inherit;
-                        height: 279px;
                     }
                     .fItem6 {
                         background: url(../../images/Layer_7.jpg) no-repeat, $colorAll;
@@ -680,14 +710,10 @@
                     .fItem7 {
                         background: url(../../images/Layer_8.jpg) no-repeat, $colorAll;
                         background-size: 105%;
-                        width: inherit;
-                        height: 279px;
                     }
                     .fItem8 {
                         background: url(../../images/Layer_9.jpg) no-repeat, $colorAll;
                         background-size: 100%;
-                        width: inherit;
-                        height: 279px;
                     }
                     .sign {
                         padding: 18px 14px;
@@ -695,13 +721,13 @@
                             margin: 0;
                             color: #222222;
                             font-family: $fontFamily;
-                            font-size: 14px;
+                            //font-size: 14px;
                             font-weight: 400;
                             text-transform: uppercase;
                         }
                         p {
                             font-family: $fontFamily;
-                            font-size: 16px;
+                            //font-size: 16px;
                             font-weight: 700;
                             text-transform: uppercase;
                             color: #f16d7f;
@@ -833,17 +859,15 @@
                             margin: 0;
                             color: #fbfbfb;
                             font-family: $fontFamily;
-                            font-size: 20px;
                             font-weight: 700;
-                            padding-top: 50px;
                         }
                         p {
                             margin: 0;
                             color: #fbfbfb;
                             font-family: $fontFamily;
-                            font-size: 14px;
+                            
                             font-weight: 300;
-                            line-height: 24px;
+                            
                             padding-top: 5px;
                         }
                     }
