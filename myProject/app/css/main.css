@@ -8893,35 +8893,6 @@ a.text-dark:hover, a.text-dark:focus {
     width: 50%;
     min-height: 2000px; } }
 
-@media (min-width: 768px) and (max-width: 992px) {
-  .featuredItems {
-    width: 100%;
-    min-height: auto; }
-  .contantAim .contantAimInside {
-    height: auto; }
-    .contantAim .contantAimInside .content2,
-    .contantAim .contantAimInside .content3,
-    .contantAim .contantAimInside .content4 {
-      margin-top: 20px; }
-  .offerItem {
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0px 453px 151px;
-    grid-template-areas: "a a a" "b b b" "c d e"; }
-    .offerItem .offerItemPic {
-      grid-area: b;
-      -webkit-background-size: 100% 100% !important;
-              background-size: 100% !important; }
-    .offerItem h3 {
-      padding-top: 20px; }
-  .review .reviewChild .reviewChildInside {
-    grid-template-rows: 1fr 1px 1fr; }
-  footer nav {
-    display: grid;
-    grid-template-areas: "o o o o" "a b c d" "e f g k" "l l l l";
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    grid-template-rows: 123px 60px 3fr 79px; } }
-
 @media (max-width: 768px) {
   .offerItem {
     grid-template-columns: 1fr 1fr 1fr;
@@ -8937,9 +8908,9 @@ a.text-dark:hover, a.text-dark:focus {
       font-size: 40px; }
     .offerItem p {
       font-size: 28px;
-      line-height: 40px !important; }
+      line-height: 40px; }
     .offerItem .offerDiscrText {
-      width: 600px !important; }
+      width: 600px; }
     .offerItem .offerItemDescription {
       -webkit-box-pack: center;
       -webkit-justify-content: center;
@@ -8948,53 +8919,59 @@ a.text-dark:hover, a.text-dark:focus {
       -webkit-align-content: center;
           -ms-flex-line-pack: center;
               align-content: center; }
+  .offerDiscrPic {
+    height: 70px;
+    width: 70px;
+    -webkit-background-size: 100% 100%;
+            background-size: 100%; }
   .review {
-    height: 600px !important; }
+    height: 600px; }
     .review .reviewChild {
       -webkit-background-size: 200% 200% !important;
               background-size: 200% !important; }
       .review .reviewChild .reviewChildInside {
         grid-template-rows: 1fr 1px 1fr; }
         .review .reviewChild .reviewChildInside .leftPartPic {
-          margin: 10% !important;
-          width: 80% !important; }
+          margin: 10%;
+          width: 80%; }
           .review .reviewChild .reviewChildInside .leftPartPic P {
-            font-size: 32px !important;
-            line-height: 40px !important; }
+            font-size: 32px;
+            line-height: 40px; }
           .review .reviewChild .reviewChildInside .leftPartPic h6 {
-            font-size: 32px !important; }
+            font-size: 32px; }
             .review .reviewChild .reviewChildInside .leftPartPic h6 span {
-              font-size: 28px !important; }
+              font-size: 28px; }
           .review .reviewChild .reviewChildInside .leftPartPic .buttonContainer {
-            display: -webkit-box !important;
-            display: -webkit-flex !important;
-            display: -ms-flexbox !important;
-            display: flex !important;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
             -webkit-box-pack: center;
             -webkit-justify-content: center;
                 -ms-flex-pack: center;
                     justify-content: center; }
             .review .reviewChild .reviewChildInside .leftPartPic .buttonContainer .button {
-              width: 300px !important;
-              height: 20px !important;
-              margin-right: 26px !important; }
+              width: 300px;
+              height: 20px;
+              margin-right: 26px; }
         .review .reviewChild .reviewChildInside .rightPart {
-          width: 100% !important; }
+          width: 100%; }
           .review .reviewChild .reviewChildInside .rightPart h1 {
-            font-size: 48px !important; }
+            font-size: 48px; }
           .review .reviewChild .reviewChildInside .rightPart p {
             display: none; }
           .review .reviewChild .reviewChildInside .rightPart form {
-            width: 100% !important;
-            font-size: 48px !important; }
+            width: 100%;
+            height: 100px !important;
+            font-size: 48px; }
             .review .reviewChild .reviewChildInside .rightPart form input {
-              width: 80% !important;
-              height: 92px !important;
+              width: 80%;
+              height: 100%;
               font-size: 32px !important; }
             .review .reviewChild .reviewChildInside .rightPart form button {
-              height: 92px !important;
-              width: 15% !important;
-              font-size: 32px !important; }
+              height: 100%;
+              width: 15%;
+              font-size: 32px; }
   footer nav {
     display: grid;
     grid-template-areas: "o o o" "a a a" "e e e" "b c d" "f g k" "l l l";
@@ -9079,6 +9056,45 @@ a.text-dark:hover, a.text-dark:focus {
         footer nav .footerSocial .right a {
           font-size: 52px !important; } }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .featuredItems {
+    width: 100%;
+    min-height: auto; }
+  .contantAim .contantAimInside {
+    height: auto; }
+    .contantAim .contantAimInside .content2,
+    .contantAim .contantAimInside .content3,
+    .contantAim .contantAimInside .content4 {
+      margin-top: 20px; }
+  .offerItem {
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0px 453px 151px;
+    grid-template-areas: "a a a" "b b b" "c d e"; }
+    .offerItem .offerItemPic {
+      grid-area: b;
+      -webkit-background-size: 100% 100% !important;
+              background-size: 100% !important; }
+    .offerItem h3 {
+      padding-top: 20px; }
+  .offerDiscrText {
+    width: 250px; }
+  .offerDiscrPic {
+    height: 40px;
+    width: 50px; }
+  .review .reviewChild {
+    -webkit-background-size: 200% 200% !important;
+            background-size: 200% !important; }
+    .review .reviewChild .reviewChildInside {
+      grid-template-rows: 1fr 1px 1fr; }
+      .review .reviewChild .reviewChildInside .leftPart {
+        padding: 0 25% !important; }
+  footer nav {
+    display: grid;
+    grid-template-areas: "o o o o" "a b c d" "e f g k" "l l l l";
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 123px 60px 3fr 79px; } }
+
 @media (min-width: 992px) {
   header .headerInside .container:first-child .bg-light .navbar-brand .logo {
     height: 50px; }
@@ -9124,8 +9140,55 @@ a.text-dark:hover, a.text-dark:focus {
     .offerItem .offerItemPic p {
       font-size: 14px;
       line-height: 24px; }
-  .review .reviewChild .reviewChildInside {
-    grid-template-columns: 1fr 1px 1fr; }
+  .offerDiscrPic {
+    height: 40px;
+    width: 47px; }
+  .offerDiscrText {
+    width: 220px; }
+  .review {
+    height: 438px; }
+    .review .reviewChild {
+      -webkit-background-size: 142% 142% !important;
+              background-size: 142% !important; }
+      .review .reviewChild .reviewChildInside {
+        grid-template-columns: 1fr 1px 1fr; }
+        .review .reviewChild .reviewChildInside .leftPartPic {
+          margin: auto;
+          width: 500px; }
+          .review .reviewChild .reviewChildInside .leftPartPic P {
+            font-size: 16px;
+            line-height: 26px; }
+          .review .reviewChild .reviewChildInside .leftPartPic h6 {
+            font-size: 16px; }
+            .review .reviewChild .reviewChildInside .leftPartPic h6 span {
+              font-size: 12px; }
+          .review .reviewChild .reviewChildInside .leftPartPic .buttonContainer {
+            display: -webkit-box !important;
+            display: -webkit-flex !important;
+            display: -ms-flexbox !important;
+            display: flex !important;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            .review .reviewChild .reviewChildInside .leftPartPic .buttonContainer .button {
+              width: 38px;
+              height: 4px;
+              margin-right: 13px; }
+        .review .reviewChild .reviewChildInside .rightPart {
+          width: 100% !important; }
+          .review .reviewChild .reviewChildInside .rightPart h1 {
+            font-size: 24px; }
+          .review .reviewChild .reviewChildInside .rightPart p {
+            display: none; }
+          .review .reviewChild .reviewChildInside .rightPart form input {
+            width: 282px;
+            height: 46px;
+            font-size: 14px; }
+          .review .reviewChild .reviewChildInside .rightPart form button {
+            width: 104px;
+            height: 46px;
+            font-size: 14px; }
   footer nav {
     display: grid;
     grid-template-areas: "o o o o" "a b c d" "e f g k" "l l l l";
@@ -9601,24 +9664,18 @@ body {
         grid-area: c;
         background-color: #222224; }
         body .mainContainer .offerItem .offerItemDescription:nth-child(2) .offerDiscrPic {
-          height: 32px;
-          width: 45px;
           margin: 48px 36px;
           background: url("../../images/Forma_1.png") no-repeat; }
       body .mainContainer .offerItem .offerItemDescription:nth-child(3) {
         grid-area: d;
         background-color: #222224; }
         body .mainContainer .offerItem .offerItemDescription:nth-child(3) .offerDiscrPic {
-          height: 40px;
-          width: 40px;
           margin: 48px 36px 48px 40px;
           background: url("../../images/Forma_1%20(1).png") no-repeat; }
       body .mainContainer .offerItem .offerItemDescription:nth-child(4) {
         grid-area: e;
         background-color: #222224; }
         body .mainContainer .offerItem .offerItemDescription:nth-child(4) .offerDiscrPic {
-          height: 35px;
-          width: 47px;
           margin: 48px 36px;
           background: url("../../images/Forma_1%20(2).png") no-repeat; }
       body .mainContainer .offerItem .offerItemDescription {
@@ -9626,29 +9683,24 @@ body {
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex; }
-        body .mainContainer .offerItem .offerItemDescription .offerDiscrText {
-          width: 250px; }
-          body .mainContainer .offerItem .offerItemDescription .offerDiscrText h3 {
-            margin: 0;
-            color: #fbfbfb;
-            font-family: "Lato";
-            font-weight: 700; }
-          body .mainContainer .offerItem .offerItemDescription .offerDiscrText p {
-            margin: 0;
-            color: #fbfbfb;
-            font-family: "Lato";
-            font-weight: 300;
-            padding-top: 5px; }
+        body .mainContainer .offerItem .offerItemDescription .offerDiscrText h3 {
+          margin: 0;
+          color: #fbfbfb;
+          font-family: "Lato";
+          font-weight: 700; }
+        body .mainContainer .offerItem .offerItemDescription .offerDiscrText p {
+          margin: 0;
+          color: #fbfbfb;
+          font-family: "Lato";
+          font-weight: 300;
+          padding-top: 5px; }
     body .mainContainer .review {
-      background-color: #eeeeee;
-      height: 438px; }
+      background-color: #eeeeee; }
       body .mainContainer .review .reviewChild {
         margin: 0 auto;
         width: 1140px;
         height: inherit;
-        background: url("../../images/Layer_41.jpg") no-repeat;
-        -webkit-background-size: 142% 142%;
-                background-size: 142%; }
+        background: url("../../images/Layer_41.jpg") no-repeat; }
         body .mainContainer .review .reviewChild .reviewChildInside {
           height: inherit;
           background: url("../../images/Rectangle_9_copy.png");
@@ -9659,9 +9711,7 @@ body {
             background-color: #ffffff; }
           body .mainContainer .review .reviewChild .reviewChildInside .leftPartPic {
             height: 171px;
-            width: 500px;
             background: url("../../images/Layer_40.png") no-repeat;
-            margin: auto;
             margin-top: 111px; }
             body .mainContainer .review .reviewChild .reviewChildInside .leftPartPic P,
             body .mainContainer .review .reviewChild .reviewChildInside .leftPartPic h6 {
@@ -9669,30 +9719,23 @@ body {
             body .mainContainer .review .reviewChild .reviewChildInside .leftPartPic p {
               color: #222224;
               font-family: "Lato";
-              font-size: 16px;
               font-style: italic;
-              line-height: 26px;
               margin-bottom: 5px; }
             body .mainContainer .review .reviewChild .reviewChildInside .leftPartPic h6 {
               color: #f16d7f;
               font-family: "Lato";
-              font-size: 16px;
               font-weight: 700;
               margin: 0; }
               body .mainContainer .review .reviewChild .reviewChildInside .leftPartPic h6 span {
                 color: #222224;
                 font-family: "$fontFamily Light";
-                font-size: 12px;
                 font-weight: 300;
                 letter-spacing: 0.3px; }
             body .mainContainer .review .reviewChild .reviewChildInside .leftPartPic .buttonContainer {
               margin-left: 111px; }
               body .mainContainer .review .reviewChild .reviewChildInside .leftPartPic .buttonContainer .button {
                 display: inline-block;
-                width: 38px;
-                height: 4px;
-                background-color: #d6d6d6;
-                margin-right: 13px; }
+                background-color: #d6d6d6; }
                 body .mainContainer .review .reviewChild .reviewChildInside .leftPartPic .buttonContainer .button a {
                   height: 100%;
                   width: 100%; }
@@ -9703,7 +9746,6 @@ body {
             body .mainContainer .review .reviewChild .reviewChildInside .rightPart h1 {
               color: #222224;
               font-family: "Lato";
-              font-size: 24px;
               font-weight: 400;
               margin: 0 0 5px 0;
               text-align: center; }
@@ -9715,11 +9757,17 @@ body {
               margin: 0 0 8px 0;
               text-align: center; }
             body .mainContainer .review .reviewChild .reviewChildInside .rightPart form {
-              padding-left: 40px; }
+              height: 46px;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+                  -ms-flex-pack: center;
+                      justify-content: center; }
               body .mainContainer .review .reviewChild .reviewChildInside .rightPart form input {
                 border: none;
-                width: 282px;
-                height: 46px;
                 -webkit-border-radius: 23px 0 0 23px;
                         border-radius: 23px 0 0 23px;
                 background-color: #e1e1e1;
@@ -9727,17 +9775,15 @@ body {
                 font-family: "Lato";
                 font-size: 14px;
                 font-weight: 400;
-                line-height: 54px; }
+                line-height: 46px;
+                text-align: center; }
               body .mainContainer .review .reviewChild .reviewChildInside .rightPart form button {
-                width: 104px;
-                height: 46.5px;
                 -webkit-border-radius: 0 23px 23px 0;
                         border-radius: 0 23px 23px 0;
                 background-color: #f16d7f;
                 border: none;
                 color: #ffffff;
                 font-family: "Lato";
-                font-size: 14px;
                 font-weight: 400; }
   body footer {
     background-color: #e6e6e6;
