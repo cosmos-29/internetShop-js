@@ -1,5 +1,5 @@
     @import '_libs';
-    // Большие девайсы (десктопы, >= 992px)
+    // Большие девайсы (десктопы, >= 992px);
     @media (max-width: 992px) {
         .headerInside {
             .container {
@@ -94,7 +94,7 @@
         }
     }
     
-    // Большие девайсы («таблетки», >= 992px)
+    // Большие девайсы («таблетки», >= 992px);
     @media (min-width: 992px) and (max-width:$widthAll) {
         .featuredItems {
             width: 50%;
@@ -102,386 +102,530 @@
         }
     }
     
-    // Для малых и очень малых девайсов ( <= 768px)
+    // Для малых и очень малых девайсов ( <= 768px);
     @media (max-width: 768px) {
-        .offerItem {
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 0px 453px 151px 151px 151px;
-            height: auto;
-            grid-template-areas: "a a a" "b b b" "c c c" "d d d" "e e e";
-            .offerItemPic {
-                grid-area: b;
-                background-size: 100% !important;
-            }
-            h3 {
-                padding-top: 20px;
-                font-size: 40px;
-            }
-            p {
-                font-size: 28px;
-                line-height: 40px;
-            }
-            .offerDiscrText {
-                width: 600px;
-            }
-            .offerItemDescription {
-                justify-content: center;
-                align-content: center
-            }
-        }
-        .offerDiscrPic {
-            height: 70px;
-            width: 70px;
-            background-size: 100%;
-        }
-        .review {
-            height: 600px;
-            .reviewChild {
-                background-size: 200% !important;
-                .reviewChildInside {
-                    grid-template-rows: 1fr 1px 1fr;
-                    .leftPartPic {
-                        margin: 10%;
-                        width: 80%;
-                        P {
-                            font-size: 32px;
-                            line-height: 40px;
-                        }
-                        h6 {
-                            font-size: 32px;
-                            span {
-                                font-size: 28px;
-                            }
-                        }
-                        .buttonContainer {
-                            display: flex;
-                            justify-content: center;
-                            .button {
-                                width: 300px;
-                                height: 20px;
-                                margin-right: 26px;
-                            }
-                        }
-                    }
-                    .rightPart {
-                        width: 100%;
-                        h1 {
-                            font-size: 48px;
-                        }
-                        p {
-                            display: none;
-                        }
-                        form {
-                            width: 100%;
-                            height: 100px !important;
-                            font-size: 48px;
-                            input {
-                                width: 80%;
-                                height: 100%;
-                                font-size: 32px !important;
-                            }
-                            button {
-                                height: 100%;
-                                width: 15%;
-                                font-size: 32px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        footer {
-            nav {
-                display: grid;
-                grid-template-areas: "o o o" "a a a" "e e e" "b c d" "f g k" "l l l";
+        //Для index.html
+        body {
+            .offerItem {
                 grid-template-columns: 1fr 1fr 1fr;
-                grid-template-rows: 123px 200px 4fr 110px 600px 110px;
-                .brand {
-                    height: 100% !important;
-                    margin: auto !important;
-                    .logo {
-                        height: 100% !important;
-                        p {
-                            font-size: 190px !important;
-                            padding-top: 0px;
-                            margin-top: -30px !important;
-                            padding-left: 150px;
-                        }
-                    }
-                }
-                .txt {
-                    background-color: #fff;
-                    p {
-                        font-size: 32px;
-                        padding: 0 20px 0 20px;
-                    }
-                }
-                .colomnName {
-                    font-size: 42px !important;
-                    padding: 50px 0 50px 0;
-                }
-                .colomns {
-                    //align-items: center !important;
-                    //justify-content: center !important;
-                    ul {
-                        li {
-                            padding-top: 60px !important;
-                            a {
-                                font-size: 32px !important;
-                            }
-                        }
-                    }
-                }
-                .footerSocial {
-                    flex-direction: column;
-                    justify-content: center !important;
-                    align-items: center !important;
-                    .left {
-                        width: 100% !important;
-                        height: 100px;
-                        display: flex;
-                        justify-content: center !important;
-                        align-items: center !important;
-                        p {
-                            font-size: 32px !important;
-                        }
-                    }
-                    .right {
-                        width: 100% !important;
-                        display: flex;
-                        justify-content: center !important;
-                        align-items: center !important;
-                        ul {
-                            width: 100%;
-                            display: flex !important;
-                            justify-content: space-around;
-                        }
-                        li {}
-                        a {
-                            font-size: 52px !important;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    
-    // Средние девайсы («таблетки», >= 768px < 992px)
-    @media (min-width: 768px) and (max-width:992px) {
-        .featuredItems {
-            width: 100%;
-            min-height: auto;
-        }
-        .contantAim {
-            .contantAimInside {
+                grid-template-rows: 0px 453px 151px 151px 151px;
                 height: auto;
-                .content2,
-                .content3,
-                .content4 {
-                    margin-top: 20px;
+                grid-template-areas: "a a a" "b b b" "c c c" "d d d" "e e e";
+                .offerItemPic {
+                    grid-area: b;
+                    background-size: 100% !important;
                 }
-            }
-        }
-        .offerItem {
-            width: 100%;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 0px 453px 151px;
-            grid-template-areas: "a a a" "b b b" "c d e";
-            .offerItemPic {
-                grid-area: b;
-                background-size: 100% !important;
-            }
-            h3 {
-                padding-top: 20px;
-            }
-        }
-        .offerDiscrText {
-            width: 250px;
-        }
-        .offerDiscrPic {
-            height: 40px;
-            width: 50px;
-        }
-        .review {
-            .reviewChild {
-                background-size: 200% !important;
-                .reviewChildInside {
-                    grid-template-rows: 1fr 1px 1fr;
-                    
-                    .leftPart {
-                        padding: 0 25% !important;
-                    }
-                }
-            }
-        }
-        footer {
-            nav {
-                display: grid;
-                grid-template-areas: "o o o o" "a b c d" "e f g k" "l l l l";
-                grid-template-columns: 2fr 1fr 1fr 1fr;
-                grid-template-rows: 123px 60px 3fr 79px;
-            }
-        }
-    }
-    
-    // Для крупных девайсов ( >= 992px)
-    @media (min-width: 992px) {
-        header {
-            .headerInside {
-                .container:first-child {
-                    .bg-light {
-                        .navbar-brand {
-                            .logo {
-                                height: 50px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .mainContainer {
-            .nawWrap {
-                height: 51px;
-                nav {
-                    a {
-                        font-size: 14px;
-                    }
-                }
-            }
-            .featuredItems {
-                width: 100%;
-                .fItems {
-                    width: 261px;
-                    height: 364px;
-                    .sign {
-                        h2 {
-                            font-size: 14px;
-                        }
-                        p {
-                            font-size: 16px;
-                        }
-                    }
-                    .forAdaptive {
-                        width: inherit;
-                        height: 279px;
-                        ;
-                        .background {
-                            width: inherit;
-                            height: 285px;
-                            ;
-                            button {
-                                width: 150px;
-                                height: 39px;
-                                font-size: 13px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .contantAim {
-            .contantAimInside {
-                height: 950px;
-                padding: 100px 0 0 0;
-                .content2,
-                .content3,
-                .content4 {
-                    //margin-top: 20px;
-                }
-                .content1,
-                .content2,
-                .content3,
-                .content4 {
-                    width: $widthContents;
-                }
-            }
-        }
-        .offerItem {
-            grid-template-columns: 2fr 1fr;
-            grid-template-rows: 113px 529px/3 529px/3 529px/3 97px;
-            grid-template-areas: "a a" "b c" "b d" "b e" "f f";
-            .offerItemPic {
                 h3 {
-                    padding-top: 50px;
-                    font-size: 20px;
+                    padding-top: 20px;
+                    font-size: 40px;
                 }
                 p {
-                    font-size: 14px;
-                    line-height: 24px;
+                    font-size: 28px;
+                    line-height: 40px;
+                }
+                .offerDiscrText {
+                    width: 600px;
+                }
+                .offerItemDescription {
+                    justify-content: center;
+                    align-content: center
                 }
             }
-        }
-        .offerDiscrPic {
-            height: 40px;
-            width: 47px;
-        }
-        .offerDiscrText {
-            width: 220px;
-        }
-        .review {
-            height: 438px;
-            .reviewChild {
-                background-size: 142% !important;
-                .reviewChildInside {
-                    grid-template-columns: 1fr 1px 1fr;
-                    .leftPartPic {
-                        margin: auto;
-                        width: 500px;
-                        P {
-                            font-size: 16px;
-                            line-height: 26px;
-                        }
-                        h6 {
-                            font-size: 16px;
-                            span {
-                                font-size: 12px;
+            .offerDiscrPic {
+                height: 70px;
+                width: 70px;
+                background-size: 100%;
+            }
+            .review {
+                height: 600px;
+                .reviewChild {
+                    background-size: 200% !important;
+                    .reviewChildInside {
+                        grid-template-rows: 1fr 1px 1fr;
+                        .leftPartPic {
+                            margin: 10%;
+                            width: 80%;
+                            P {
+                                font-size: 32px;
+                                line-height: 40px;
+                            }
+                            h6 {
+                                font-size: 32px;
+                                span {
+                                    font-size: 28px;
+                                }
+                            }
+                            .buttonContainer {
+                                display: flex;
+                                justify-content: center;
+                                .button {
+                                    width: 300px;
+                                    height: 20px;
+                                    margin-right: 26px;
+                                }
                             }
                         }
-                        .buttonContainer {
-                            display: flex !important;
-                            justify-content: center;
-                            .button {
-                                width: 38px;
-                                height: 4px;
-                                margin-right: 13px;
+                        .rightPart {
+                            width: 100%;
+                            h1 {
+                                font-size: 48px;
+                            }
+                            p {
+                                display: none;
+                            }
+                            form {
+                                width: 100%;
+                                height: 100px !important;
+                                font-size: 48px;
+                                input {
+                                    width: 80%;
+                                    height: 100%;
+                                    font-size: 32px !important;
+                                }
+                                button {
+                                    height: 100%;
+                                    width: 15%;
+                                    font-size: 32px;
+                                }
                             }
                         }
                     }
-                    .rightPart {
-                        width: 100% !important;
-                        h1 {
-                            font-size: 24px;
+                }
+            }
+            footer {
+                nav {
+                    display: grid;
+                    grid-template-areas: "o o o" "a a a" "e e e" "b c d" "f g k" "l l l";
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: 123px 200px 4fr 110px 600px 110px;
+                    .brand {
+                        height: 100% !important;
+                        margin: auto !important;
+                        .logo {
+                            height: 100% !important;
+                            p {
+                                font-size: 190px !important;
+                                padding-top: 0px;
+                                margin-top: -30px !important;
+                                padding-left: 150px;
+                            }
+                        }
+                    }
+                    .txt {
+                        background-color: #fff;
+                        p {
+                            font-size: 32px;
+                            padding: 0 20px 0 20px;
+                        }
+                    }
+                    .colomnName {
+                        font-size: 42px !important;
+                        padding: 50px 0 50px 0;
+                    }
+                    .colomns {
+                        //align-items: center !important;
+                        //justify-content: center !important;
+                        ul {
+                            li {
+                                padding-top: 60px !important;
+                                a {
+                                    font-size: 32px !important;
+                                }
+                            }
+                        }
+                    }
+                    .footerSocial {
+                        flex-direction: column;
+                        justify-content: center !important;
+                        align-items: center !important;
+                        .left {
+                            width: 100% !important;
+                            height: 100px;
+                            display: flex;
+                            justify-content: center !important;
+                            align-items: center !important;
+                            p {
+                                font-size: 32px !important;
+                            }
+                        }
+                        .right {
+                            width: 100% !important;
+                            display: flex;
+                            justify-content: center !important;
+                            align-items: center !important;
+                            ul {
+                                width: 100%;
+                                display: flex !important;
+                                justify-content: space-around;
+                            }
+                            li {}
+                            a {
+                                font-size: 52px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //Для forMan.html
+        body {
+            .mainContainerItem {
+                margin-top: 100px !important;
+            }
+            .forMenItem {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                height: auto;
+                justify-content: center;
+                align-items: center;
+                .gridItenForMenHeader {
+                    p {
+                        font-size: 2.5em;
+                        text-transform: uppercase;
+                    }
+                    &:not(:first-child) {
+                        display: none;
+                    }
+                }
+                .gridItenForMenLeft {
+                    width: 75%;
+                    height: 300px;
+                    .itemForMen {
+                        height: 100% !important;
+                        width: 30% !important;
+                        img {
+                            height: 100% !important;
+                            width: 100% !important;
+                        }
+                    }
+                    section {
+                        padding-left: 4em;
+                        h2,
+                        p {
+                            font-size: 2em !important;
                         }
                         p {
-                            display: none;
+                            line-height: 2em !important;
                         }
-                        form {
-                            input {
-                                width: 282px;
-                                height: 46px;
-                                font-size: 14px;
-                            }
-                            button {
-                                width: 104px;
-                                height: 46px;
-                                font-size: 14px;
-                            }
+                    }
+                }
+                .gridItenForMen {
+                    height: 100px !important;
+                    font-size: 2em !important;
+                }
+            }
+            .buttonPostItem .container {
+                max-width: 80% !important;
+                div {
+                    width: 50%;
+                    form {
+                        width: 75%;
+                        height: 100px;
+                        button {
+                            width: 100% !important;
+                            height: 100px !important;
+                            font-size: 2em !important;
+                            color: white !important;
+                            background-color: $mainColor !important;
                         }
                     }
                 }
             }
-        }
-        footer {
-            nav {
-                display: grid;
-                grid-template-areas: "o o o o" "a b c d" "e f g k" "l l l l";
-                grid-template-columns: 2fr 1fr 1fr 1fr;
-                grid-template-rows: 123px 60px 3fr 79px;
+            .feeldsSend {
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+                .parts {
+                    width: 75% !important;
+                    height: auto !important;
+                    section {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        align-items: center;
+                        padding-bottom: 100px;
+                        h2 {
+                            font-size: 2.5em !important;
+                        }
+                        select,
+                        input {
+                            width: 100% !important;
+                            height: 100px !important;
+                            font-size: 2em;
+                        }
+                        button {
+                            width: 730px !important;
+                            height: 100px !important;
+                            font-size: 2em !important;
+                            color: white !important;
+                            background-color: $mainColor !important;
+                        }
+                    }
+                    .send {
+                        width: 100% !important;
+                        padding: 0px 40px!important;
+                        margin-bottom: 100px;
+                        
+                        flex-direction: column !important;
+                        align-items: center ;
+                        
+                        h6, h3 {
+                            font-size: 2em !important;
+                        }
+                        
+                        button {
+                            width: 730px !important;
+                            height: 100px !important;
+                            font-size: 2em !important;
+                            color: white !important;
+                            background-color: $mainColor !important;
+                        }
+                        
+                    }
+                }
             }
         }
     }
     
-    // Стили к страничке index.html;
+    // Средние девайсы («таблетки», >= 768px < 992px);
+    @media (min-width: 768px) and (max-width:992px) {
+        //Для index.html
+        body {
+            .featuredItems {
+                width: 100%;
+                min-height: auto;
+            }
+            .contantAim {
+                .contantAimInside {
+                    height: auto;
+                    .content2,
+                    .content3,
+                    .content4 {
+                        margin-top: 20px;
+                    }
+                }
+            }
+            .offerItem {
+                width: 100%;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 0px 453px 151px;
+                grid-template-areas: "a a a" "b b b" "c d e";
+                .offerItemPic {
+                    grid-area: b;
+                    background-size: 100% !important;
+                }
+                h3 {
+                    padding-top: 20px;
+                }
+            }
+            .offerDiscrText {
+                width: 250px;
+            }
+            .offerDiscrPic {
+                height: 40px;
+                width: 50px;
+            }
+            .review {
+                .reviewChild {
+                    background-size: 200% !important;
+                    .reviewChildInside {
+                        grid-template-rows: 1fr 1px 1fr;
+                        .leftPart {
+                            padding: 0 25% !important;
+                        }
+                    }
+                }
+            }
+            footer {
+                nav {
+                    display: grid;
+                    grid-template-areas: "o o o o" "a b c d" "e f g k" "l l l l";
+                    grid-template-columns: 2fr 1fr 1fr 1fr;
+                    grid-template-rows: 123px 60px 3fr 79px;
+                }
+            }
+        }
+        //Для forMan.html
+        body {
+            .forMenItem {
+                display: grid;
+                grid-template-columns: minmax(250px, 410px) repeat(5, 1fr);
+                grid-template-rows: repeat(4, 1fr);
+                height: 619px;
+            }
+        }
+    }
+    
+    // Для крупных девайсов ( >= 992px);
+    @media (min-width: 992px) {
+        body {
+            header {
+                .headerInside {
+                    .container:first-child {
+                        .bg-light {
+                            .navbar-brand {
+                                .logo {
+                                    height: 50px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .mainContainer {
+                .nawWrap {
+                    height: 51px;
+                    nav {
+                        a {
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .featuredItems {
+                    width: 100%;
+                    .fItems {
+                        width: 261px;
+                        height: 364px;
+                        .sign {
+                            h2 {
+                                font-size: 14px;
+                            }
+                            p {
+                                font-size: 16px;
+                            }
+                        }
+                        .forAdaptive {
+                            width: inherit;
+                            height: 279px;
+                            ;
+                            .background {
+                                width: inherit;
+                                height: 285px;
+                                ;
+                                button {
+                                    width: 150px;
+                                    height: 39px;
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .contantAim {
+                .contantAimInside {
+                    height: 950px;
+                    padding: 100px 0 0 0;
+                    .content2,
+                    .content3,
+                    .content4 {
+                        //margin-top: 20px;
+                    }
+                    .content1,
+                    .content2,
+                    .content3,
+                    .content4 {
+                        width: $widthContents;
+                    }
+                }
+            }
+            .offerItem {
+                grid-template-columns: 2fr 1fr;
+                grid-template-rows: 113px 529px/3 529px/3 529px/3 97px;
+                grid-template-areas: "a a" "b c" "b d" "b e" "f f";
+                .offerItemPic {
+                    h3 {
+                        padding-top: 50px;
+                        font-size: 20px;
+                    }
+                    p {
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                }
+            }
+            .offerDiscrPic {
+                height: 40px;
+                width: 47px;
+            }
+            .offerDiscrText {
+                width: 220px;
+            }
+            .review {
+                height: 438px;
+                .reviewChild {
+                    background-size: 142% !important;
+                    .reviewChildInside {
+                        grid-template-columns: 1fr 1px 1fr;
+                        .leftPartPic {
+                            margin: auto;
+                            width: 500px;
+                            P {
+                                font-size: 16px;
+                                line-height: 26px;
+                            }
+                            h6 {
+                                font-size: 16px;
+                                span {
+                                    font-size: 12px;
+                                }
+                            }
+                            .buttonContainer {
+                                display: flex !important;
+                                justify-content: center;
+                                .button {
+                                    width: 38px;
+                                    height: 4px;
+                                    margin-right: 13px;
+                                }
+                            }
+                        }
+                        .rightPart {
+                            width: 100% !important;
+                            h1 {
+                                font-size: 24px;
+                            }
+                            p {
+                                display: none;
+                            }
+                            form {
+                                input {
+                                    width: 282px;
+                                    height: 46px;
+                                    font-size: 14px;
+                                }
+                                button {
+                                    width: 104px;
+                                    height: 46px;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            footer {
+                nav {
+                    display: grid;
+                    grid-template-areas: "o o o o" "a b c d" "e f g k" "l l l l";
+                    grid-template-columns: 2fr 1fr 1fr 1fr;
+                    grid-template-rows: 123px 60px 3fr 79px;
+                }
+            }
+        }
+        //Для forMan.html
+        body {
+            .forMenItem {
+                display: grid;
+                height: 619px;
+                grid-template-columns: minmax(250px, 410px) repeat(5, 1fr);
+                grid-template-rows: repeat(4, 1fr);
+            }
+        }
+    }
+    
+    // Стили к страничке index.html, а также  footer + header для всех страничек;
     body {
         margin: 0;
         display: grid;
@@ -570,6 +714,7 @@
                             button {
                                 height: 38px;
                                 width: 130px;
+                                border: none;
                                 background-color: $mainColor;
                                 color: white;
                                 text-transform: capitalize;
@@ -1182,6 +1327,254 @@
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+    
+    // Стили к страничке forMan.html, а также  footer + header для всех страничек;
+    body {
+        .mainContainer {
+            .forMenImageContainer {
+                background-color: $colorBackground;
+                .forMenImage {
+                    @include margin;
+                    padding: auto;
+                    height: auto;
+                    width: $widthAll;
+                    //display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+                    div {
+                        height: 148px;
+                    }
+                    .forMenImageLeft {
+                        color: $mainColor;
+                        font-family: $fontFamily;
+                        font-size: 24px;
+                        font-weight: 400;
+                        display: flex;
+                        align-items: center;
+                        text-transform: uppercase;
+                    }
+                    .forMenImageRight {
+                        color: $colorGrey;
+                        font-family: $fontFamily;
+                        font-size: 14px;
+                        font-weight: 300;
+                        text-transform: uppercase;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        span {
+                            font-weight: 700;
+                            color: $mainColor;
+                        }
+                    }
+                }
+            }
+        }
+        .mainContainerItem {
+            background-color: $colorAll;
+            main {
+                @include margin;
+                height: auto;
+            }
+            .buttonPostItem {
+                height: auto;
+                .container {
+                    @include margin;
+                    height: 150px;
+                    display: flex;
+                    justify-content: space-between;
+                    .containerChild {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        button {
+                            width: 235px;
+                            height: 50px;
+                            border: 1px solid $lightGrey;
+                            background-color: $colorAll;
+                            color: $colorGreyDark;
+                            font-family: $fontFamily;
+                            font-size: 14px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                .feeldsSend {
+                    height: auto;
+                    display: flex;
+                    justify-content: space-between;
+                    @include margin;
+                    .parts {
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+                        height: 337px;
+                        width: 400px;
+                        section {
+                            select,
+                            input {
+                                width: 355px;
+                                height: 45px;
+                                border: 1px solid $lightGrey;
+                                background-color: $colorAll;
+                                box-sizing: border-box;
+                                padding: 0 20px 0 20px;
+                                margin-top: 20px;
+                            }
+                            button {
+                                :nth-child(1) {
+                                    width: 100px;
+                                }
+                                height: 35px;
+                                border: 1px solid $lightGrey;
+                                background-color: $colorAll;
+                                margin-top: 20px;
+                                font-size: 11px;
+                                font-weight: 700;
+                                text-transform: uppercase;
+                                :nth-child(2) {
+                                    width: 118px;
+                                }
+                            }
+                            h2 {
+                                margin: 0;
+                                color: $colorDark;
+                                font-family: $fontFamily;
+                                font-size: 16px;
+                                font-weight: 700;
+                                text-transform: uppercase;
+                            }
+                            p {
+                                color: black;
+                                font-family: $fontFamily;
+                                font-size: 14px;
+                                font-weight: 300;
+                            }
+                        }
+                        .send {
+                            width: 360px;
+                            height: 214px;
+                            background-color: $colorWhite;
+                            padding: 44px;
+                            box-sizing: border-box;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: flex-end;
+                            h6 {
+                                color: $colorGreyDark;
+                                font-family: $fontFamily;
+                                font-size: 11px;
+                                font-weight: 400;
+                                text-transform: uppercase;
+                                span {
+                                    font-weight: 700;
+                                    margin-left: 20px;
+                                }
+                            }
+                            h3 {
+                                color: $colorDark;
+                                font-family: $fontFamily;
+                                font-size: 16px;
+                                font-weight: 700;
+                                text-transform: uppercase;
+                                span {
+                                    color: $mainColor;
+                                    margin-left: 20px;
+                                }
+                            }
+                            h3,
+                            h6 {
+                                margin: 0;
+                            }
+                            .lineHr {
+                                width: 275px;
+                                height: 1px;
+                                background-color: $colorWhite2;
+                            }
+                            button {
+                                width: 273px;
+                                height: 50px;
+                                background-color: $mainColor;
+                                text-transform: uppercase;
+                                border: none;
+                                color: $colorAll;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .forMenItem {
+            @include margin;
+            //display: grid;
+            //grid-template-columns: minmax(250px, 410px) repeat(5, 1fr);
+            //grid-template-rows: repeat(4, 1fr);
+            .gridItenForMenHeader {
+                display: flex;
+                align-items: flex-end;
+                color: $colorDark;
+                font-family: $fontFamily;
+                font-size: 13px;
+                font-weight: 700;
+                text-transform: $lightGrey;
+                border-bottom: 1px solid $lightGrey;
+                &:not(#theFirstChild) {
+                    justify-content: center;
+                }
+            }
+            .gridItenForMenLeft {
+                padding: auto;
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid $lightGrey;
+                section {
+                    margin-left: 21px;
+                    h2 {
+                        color: $colorDark;
+                        font-family: $fontFamily;
+                        font-size: 13px;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                    }
+                    p {
+                        font-family: $fontFamily;
+                        color: $colorGreyDark2;
+                        font-size: 13px;
+                        font-weight: 300;
+                        line-height: 20px;
+                        span {
+                            color: $colorGreyNew;
+                            font-family: $fontFamily;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                &:nth-child(1) {}
+                .itemForMen {
+                    height: 115px;
+                    width: 100px;
+                    position: relative;
+                    background-color: $colorVckgrndItem;
+                    img {
+                        position: absolute;
+                    }
+                }
+            }
+            .gridItenForMen {
+                border-bottom: 1px solid $lightGrey;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $grey;
+                font-family: $fontFamily;
+                font-size: 13px;
+                font-weight: 400;
+                a {
+                    color: $grey;
                 }
             }
         }
